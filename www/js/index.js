@@ -80,6 +80,7 @@ var app = {
 
         push.on('error', function(e) {
             console.log("push error");
+            alert("PUsh Error="+e.message);
         });
         app.receivedEvent('deviceready');
     },
